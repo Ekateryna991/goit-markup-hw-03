@@ -26,7 +26,7 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* цвет секции для разметки (мне в помощь)*/
@@ -168,6 +168,8 @@ a {
 .main {
   display: flex;
   align-items: center;
+
+  border-bottom: 1px solid #ececec;
 }
 
 .site-nav .item:last-child {
@@ -362,13 +364,24 @@ a {
   justify-content: space-between;
 }
 
-.customers-list .item {
+.customers-list .item:first-child {
+  height: 90px;
+}
+
+.customers-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
 .customers-link {
   display: block;
+  width: 170px;
+  height: 90px;
   /* border: 1px solid purple; */
+}
+
+.customers {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 /* страница портфолио */
@@ -472,8 +485,14 @@ a {
   color: var(--secondary-text-color);
 }
 
+.works-list {
+  color: var(--primary-text-color);
+}
+
 .technokryak {
   margin-bottom: 0;
+
+  display: none;
 
   font-weight: 400;
   font-size: 18px;
@@ -491,7 +510,8 @@ footer {
 .footer-content {
   display: flex;
   align-items: baseline;
-  padding-top: 45px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
@@ -500,7 +520,7 @@ footer {
 }
 
 .address {
-  margin-top: 8px;
+  margin-top: 20px;
 }
 
 .subscription {
@@ -520,6 +540,7 @@ footer {
 
 .address-link {
   color: rgba(255, 255, 255, 0.6);
+  display: block;
 }
 
 .link-ikon {
@@ -537,4 +558,24 @@ footer {
   text-align: center;
 
   color: rgba(255, 255, 255, 0.4);
+}
+
+.social-link-reverce {
+  display: flex;
+}
+
+.social-link-reverce {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.social-link-reverce:last-child {
+  margin-right: 0px;
+}
+.list-address:first-child {
+  margin-bottom: 9px;
+}
+
+.list-address:last-child {
+  margin-top: 3px;
 }
