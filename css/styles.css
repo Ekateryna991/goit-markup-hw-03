@@ -76,10 +76,6 @@
   margin-left: 30px;
 }
 
-.team-person {
-  display: flex;
-}
-
 .person-item:not(:first-child) {
   margin-left: 30px;
 }
@@ -107,6 +103,11 @@ a {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.team-person {
+  display: flex;
+  padding-bottom: 24px;
 }
 
 .site-nav,
@@ -315,6 +316,10 @@ a {
   margin-top: 0;
   margin-bottom: 0;
 
+  position: absolute;
+  width: 370px;
+  bottom: 0px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -323,6 +328,10 @@ a {
   text-transform: uppercase;
   color: var(--primary-bg-color);
   background: rgba(47, 48, 58, 0.8);
+}
+
+.product {
+  position: relative;
 }
 
 .product-image {
@@ -336,7 +345,6 @@ a {
 
 .social-link-list {
   margin-right: 10px;
-  margin-bottom: 24px;
 }
 
 .social-link-list:last-child {
@@ -386,6 +394,10 @@ a {
 
 /* страница портфолио */
 
+.section-portfolio {
+  padding-bottom: 94px;
+}
+
 .main-portfolio {
   padding-top: 93px;
 }
@@ -434,6 +446,7 @@ a {
 
 .works-image {
   display: block;
+  height: 294px;
 }
 
 .works:nth-child(3n) {
@@ -476,6 +489,9 @@ a {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .list-item {
@@ -483,6 +499,9 @@ a {
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-text-color);
+
+  margin-top: 4px;
+  margin-bottom: 0px;
 }
 
 .works-list {
@@ -510,8 +529,10 @@ footer {
 .footer-content {
   display: flex;
   align-items: baseline;
+
   padding-top: 60px;
   padding-bottom: 60px;
+
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
