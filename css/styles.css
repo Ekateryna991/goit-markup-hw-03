@@ -318,7 +318,9 @@ a {
 
   position: absolute;
   width: 370px;
+  height: 70px;
   bottom: 0px;
+  padding-top: 27px;
 
   font-weight: 700;
   font-size: 14px;
